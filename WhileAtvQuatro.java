@@ -50,10 +50,15 @@ public class WhileAtvQuatro {
 			
 			System.out.print("Deseja continuar (S/N): ");
 			comparador = leia.next();
+			while(!comparador.equals("S") && !comparador.equals("N")){
+				System.out.println("Digite uma resposta válida (S/N)!!!");
+				System.out.print("Deseja continuar (S/N): ");
+				comparador = leia.next();
+			}
 		}
 		float mediaIdade = total / totalPesquisa;
 		
-		System.out.println("Total de pessoas desenvolvedoras Backend: " + devBackEnd);
+		System.out.println("\n\nTotal de pessoas desenvolvedoras Backend: " + devBackEnd);
 		System.out.println("Total de Mulheres Cis e Trans desenvolvedoras Frontend: "+ mulherCTdevFe);
 		System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: "+ homemCTdevM40);
 		System.out.println("Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos: "+ nbDevFull30);
