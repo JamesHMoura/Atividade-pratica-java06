@@ -10,7 +10,7 @@ public class ArividadeFor {
 		int num1, num2;
 		System.out.print("Digite o primeiro número do intervalo: ");
 		num1= leia.nextInt();
-		System.out.print("\nDigite o primeiro número do intervalo: ");
+		System.out.print("\nDigite o segundo número do intervalo: ");
 		num2= leia.nextInt();
 		
 		if (num1 > num2) {
